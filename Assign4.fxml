@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane   xmlns:fx="http://javafx.com/fxml/1" id="BorderPane" prefHeight="400.0" prefWidth="600.0" fx:controller="gupanshu.Assign4Controller" stylesheets="@fx.css">
+    <fx:define>
+    <Insets fx:id="Margins" top="0" bottom="0" right="5" left="5" />
+    </fx:define>
+    <top>
+        
+    <GridPane vgap="5" hgap="5" styleClass="gPane" >  
+        <columnConstraints>
+        <ColumnConstraints hgrow="ALWAYS"/>
+        <ColumnConstraints  hgrow="ALWAYS"/>
+        <ColumnConstraints  hgrow="ALWAYS"/>
+        <ColumnConstraints  hgrow="ALWAYS"/>
+        </columnConstraints>
+        <children>
+            <Label text="Inventory Tracker" styleClass="heading" fx:id="lblheading" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.columnSpan="4" GridPane.margin="$Margins"/>
+            <Label text="" fx:id="idLbl" GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.halignment="RIGHT" GridPane.margin="$Margins"/>
+            <TextField fx:id="idVal" text="" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.margin="$Margins"/>
+            <Label text="" fx:id="itemNameLbl" GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.halignment="RIGHT" GridPane.margin="$Margins"/>
+            <TextField fx:id="itemVal" text="" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.columnSpan="3" GridPane.margin="$Margins"/>
+            <Label text="" fx:id="qohLbl" GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.halignment="RIGHT" GridPane.margin="$Margins"/>
+            <TextField fx:id="qohVal" text="" GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.margin="$Margins" />
+            <Label text="" fx:id="ropLbl" GridPane.rowIndex="3" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.margin="$Margins"/>
+            <TextField fx:id="ropVal" text="" GridPane.columnIndex="3" GridPane.rowIndex="3" GridPane.margin="$Margins"/>
+            <Label text="" fx:id="spLbl" GridPane.rowIndex="4" GridPane.columnIndex="0" GridPane.halignment="RIGHT" GridPane.margin="$Margins"/>
+            <TextField fx:id="spVal" text="" GridPane.columnIndex="1" GridPane.rowIndex="4" GridPane.margin="$Margins"/>
+        <HBox GridPane.columnSpan="4" GridPane.rowIndex="5" alignment="CENTER" spacing="5" >
+            <children>
+            <Button text="_Add" fx:id="addBtn" mnemonicParsing="true" />
+            <Button text="_Save" fx:id="saveBtn" mnemonicParsing="true" />
+            <Button text="_Order" fx:id="orderBtn" mnemonicParsing="true" />
+            <Button text="_Exit" fx:id="exit" mnemonicParsing="true">
+            <HBox.margin>
+            <Insets top="0" bottom="0" right="0" left="10" />
+            </HBox.margin>
+            </Button>
+            </children>
+        </HBox>
+        </children> 
+     </GridPane>
+    </top>
+    <center >
+    <ListView fx:id="display"  /> 
+    </center>
+    <bottom>
+    <Label styleClass="redd" fx:id="errorLbl" text="" />
+    <Label styleClass="redd" fx:id="infoLbl" text="" />
+    </bottom>
+    
+</BorderPane>

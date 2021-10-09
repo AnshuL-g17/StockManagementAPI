@@ -1,0 +1,24 @@
+.root {
+    -fx-font-size: 12px;
+    -fx-font-family: sans-serif;
+    -fx-background-color: #ffffff;
+}
+
+.label{
+	-fx-text-fill: blue;
+}
+
+.gPane{
+	-fx-border-style: solid inside;
+	-fx-border-width: 2;
+	-fx-border-color: blue;
+}
+
+.heading{
+    -fx-text-fill: #00FF00;
+    -fx-font-size: 18px;
+    
+}
+.redd{
+    -fx-text-fill: red;
+}

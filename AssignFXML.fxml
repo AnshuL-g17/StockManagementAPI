@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane id="GridPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gupanshu.Assign4Controller">
+    <top>
+    <GridPane>
+    <Label fx:id="id" GridPane.rowIndex="0"/>
+    <TextField fx:id="idVal" GridPane.rowIndex="0" GridPane.columnIndex="1" />
+    <Label fx:id="itemName" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+    <TextField fx:id="itemVal" GridPane.rowIndex="1" GridPane.columnIndex="1" GridPane.rowSpan="3"/>
+    <Label fx:id="qoh" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+    <TextField fx:id="qohVal" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+    <Label fx:id="rop" GridPane.rowIndex="2" GridPane.columnIndex="2" />
+    <TextField fx:id="ropVal" GridPane.rowIndex="2" GridPane.columnIndex="3" /> 
+    <Label fx:id="sp" GridPane.rowIndex="3" GridPane.columnIndex="0" />
+    <TextField fx:id="spVal" GridPane.rowIndex="3" GridPane.columnIndex="1" />
+    <Button fx:id="addBtn"  text="ADD" GridPane.rowIndex="4"  />
+    <Button fx:id="saveBtn"  text="SAVE" GridPane.rowIndex="4"/> 
+    <Button fx:id="orderBtn"  text="ORDERS" GridPane.rowIndex="4"  />
+    <Button fx:id="exitBtn"  text="EXIT" GridPane.rowIndex="4"/>   
+    </GridPane>
+    </top>
+    <Middle>
+    <GridPane>
+    <ListView fx:id="display"></ListView>
+    </Middle>
+    <Bottom> 
+    <Label fx:id="error"></Label>
+    </Bottom>
+    </GridPane>  
+
+
+</GridPane>
+
